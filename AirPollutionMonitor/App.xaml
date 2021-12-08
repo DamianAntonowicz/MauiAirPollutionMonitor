@@ -24,4 +24,22 @@
 
         </ResourceDictionary>
     </Application.Resources>
+
+    <Application.MainPage>
+        <Shell>
+
+            <TabBar>
+                
+                <Tab Title="Stations">
+                    <ShellContent ContentTemplate="{DataTemplate local:StationsPage}"/>
+                </Tab>
+
+                <Tab Title="Stations">
+                    <ShellContent ContentTemplate="{DataTemplate local:StationsPage}"/>
+                </Tab>
+
+            </TabBar>
+            
+        </Shell>
+    </Application.MainPage>
 </Application>
