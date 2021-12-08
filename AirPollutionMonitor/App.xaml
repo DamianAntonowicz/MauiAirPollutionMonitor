@@ -34,8 +34,8 @@
                     <ShellContent ContentTemplate="{DataTemplate local:StationsPage}"/>
                 </Tab>
 
-                <Tab Title="Stations">
-                    <ShellContent ContentTemplate="{DataTemplate local:StationsPage}"/>
+                <Tab Title="Handlers">
+                    <ShellContent ContentTemplate="{DataTemplate local:HandlersPage}"/>
                 </Tab>
 
             </TabBar>
