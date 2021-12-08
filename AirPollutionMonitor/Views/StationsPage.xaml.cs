@@ -1,4 +1,5 @@
 ﻿using System;
+using AirPollutionMonitor.Models;
 using AirPollutionMonitor.ViewModels;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Essentials;
@@ -24,5 +25,13 @@ namespace AirPollutionMonitor
 				_stationsViewModel.LoadStationsCommand.Execute(null);
 			}
 		}
-	}
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+			var bindableObject = sender as BindableObject;
+			var station = bindableObject.BindingContext as Station;
+
+			await Navigation.PushAsync(new StationDetailsPage(station.Id));
+		}
+    }
 }

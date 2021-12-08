@@ -8,7 +8,11 @@
         <StackLayout BindableLayout.ItemsSource="{Binding Stations}">
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding StationName}"/>
+                    <Label Text="{Binding StationName}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
         </StackLayout>

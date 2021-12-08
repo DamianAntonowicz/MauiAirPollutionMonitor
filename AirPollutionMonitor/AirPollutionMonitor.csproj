@@ -54,12 +54,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\StationDetailsPage.xaml.cs">
+	    <DependentUpon>StationDetailsPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\StationsPage.xaml.cs">
 	    <DependentUpon>StationsPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\StationDetailsPage.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\StationsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
