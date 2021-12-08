@@ -17,7 +17,7 @@ namespace AirPollutionMonitor
 			Microsoft.Maui.Handlers.CheckBoxHandler.CheckBoxMapper.AppendToMapping(nameof(IView.Background), (handler, view) =>
 			{
 #if WINDOWS
-				handler.NativeView.Background = Colors.Red.ToNative();
+				handler.NativeView.Background = Colors.Pink.ToNative();
 #elif __ANDROID__
 				handler.NativeView.SetBackgroundColor(Colors.Red.ToNative());
 #endif
