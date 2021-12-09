@@ -54,6 +54,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\CodeSharingPage.xaml.cs">
+	    <DependentUpon>CodeSharingPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\HandlersPage.xaml.cs">
 	    <DependentUpon>HandlersPage.xaml</DependentUpon>
 	  </Compile>
@@ -66,6 +69,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\CodeSharingPage.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\HandlersPage.xaml">
 	    <SubType>Designer</SubType>
 	    <Generator>MSBuild:Compile</Generator>
@@ -83,5 +90,13 @@
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <_MauiCompileToAdd Remove="Platforms\Android\MessageService.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Platforms\Android\MessageService.cs" />
+	</ItemGroup>
 	
 </Project>

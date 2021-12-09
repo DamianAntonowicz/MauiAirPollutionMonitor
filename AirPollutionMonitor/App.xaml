@@ -38,6 +38,10 @@
                     <ShellContent ContentTemplate="{DataTemplate local:HandlersPage}"/>
                 </Tab>
 
+                <Tab Title="Code sharing">
+                    <ShellContent ContentTemplate="{DataTemplate local:CodeSharingPage}"/>
+                </Tab>
+
             </TabBar>
             
         </Shell>
