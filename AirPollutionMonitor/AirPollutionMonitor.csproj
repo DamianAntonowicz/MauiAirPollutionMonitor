@@ -49,11 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\gallardo.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	  <PackageReference Include="Refit" Version="6.1.15" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\ImagePage.xaml.cs">
+	    <DependentUpon>ImagePage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\CodeSharingPage.xaml.cs">
 	    <DependentUpon>CodeSharingPage.xaml</DependentUpon>
 	  </Compile>
@@ -69,6 +76,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\ImagePage.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\CodeSharingPage.xaml">
 	    <SubType>Designer</SubType>
 	    <Generator>MSBuild:Compile</Generator>

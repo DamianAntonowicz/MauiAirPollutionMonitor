@@ -42,6 +42,10 @@
                     <ShellContent ContentTemplate="{DataTemplate local:CodeSharingPage}"/>
                 </Tab>
 
+                <Tab Title="Images">
+                    <ShellContent ContentTemplate="{DataTemplate local:ImagePage}"/>
+                </Tab>
+
             </TabBar>
             
         </Shell>
