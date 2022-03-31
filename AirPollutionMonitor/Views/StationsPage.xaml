@@ -3,22 +3,16 @@
              x:Class="AirPollutionMonitor.StationsPage"
              BackgroundColor="{DynamicResource SecondaryColor}">
 
-    <ScrollView>
-
-        <StackLayout BindableLayout.ItemsSource="{Binding Stations}">
-            <BindableLayout.ItemTemplate>
-                <DataTemplate>
-                    <Label Text="{Binding StationName}">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                        </Label.GestureRecognizers>
-                    </Label>
-                </DataTemplate>
-            </BindableLayout.ItemTemplate>
-        </StackLayout>
-
-    </ScrollView>
+    <CollectionView ItemsSource="{Binding Stations}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Label Text="{Binding StationName}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 
 </ContentPage>
-
-    
