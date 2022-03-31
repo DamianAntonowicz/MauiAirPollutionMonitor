@@ -6,6 +6,9 @@
     <Grid>
 
         <Label Text="{Binding StationDetails.StIndexLevel.IndexLevelName}"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="Large"
                TextColor="Black"/>
 
         <ActivityIndicator IsRunning="{Binding IsBusy}"/>
