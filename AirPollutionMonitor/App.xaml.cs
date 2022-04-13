@@ -13,11 +13,6 @@ public partial class App : Application
 #elif __ANDROID__
 			handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Green);
 #endif
-
-			Routing.RegisterRoute(nameof(StationsPage), typeof(StationsPage));
-			Routing.RegisterRoute(nameof(CodeSharingPage), typeof(CodeSharingPage));
-			Routing.RegisterRoute(nameof(HandlersPage), typeof(HandlersPage));
-			Routing.RegisterRoute(nameof(ImagePage), typeof(ImagePage));
 		});
 	}
 }
