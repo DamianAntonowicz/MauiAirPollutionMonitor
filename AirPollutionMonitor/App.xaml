@@ -49,8 +49,12 @@
                     <ShellContent ContentTemplate="{DataTemplate local:MultiWindowPage}"/>
                 </Tab>
 
-                <Tab Title="shadows">
+                <Tab Title="Shadows">
                     <ShellContent ContentTemplate="{DataTemplate local:ShadowsPage}"/>
+                </Tab>
+
+                <Tab Title="Border">
+                    <ShellContent ContentTemplate="{DataTemplate local:BorderPage}"/>
                 </Tab>
 
             </TabBar>

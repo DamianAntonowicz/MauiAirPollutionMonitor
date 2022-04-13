@@ -55,6 +55,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\BorderPage.xaml.cs">
+	    <DependentUpon>BorderPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\ShadowsPage.xaml.cs">
 	    <DependentUpon>ShadowsPage.xaml</DependentUpon>
 	  </Compile>
@@ -64,6 +67,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\BorderPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ShadowsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
