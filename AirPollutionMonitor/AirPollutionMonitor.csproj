@@ -54,6 +54,18 @@
 	  <PackageReference Include="Refit" Version="6.3.2" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Views\MultiWindowPage.xaml.cs">
+	    <DependentUpon>MultiWindowPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\MultiWindowPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>

@@ -45,6 +45,10 @@
                     <ShellContent ContentTemplate="{DataTemplate local:ImagePage}"/>
                 </Tab>
 
+                <Tab Title="Multi window">
+                    <ShellContent ContentTemplate="{DataTemplate local:MultiWindowPage}"/>
+                </Tab>
+
             </TabBar>
             
         </Shell>
