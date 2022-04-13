@@ -55,12 +55,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\ShadowsPage.xaml.cs">
+	    <DependentUpon>ShadowsPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\MultiWindowPage.xaml.cs">
 	    <DependentUpon>MultiWindowPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\ShadowsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\MultiWindowPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

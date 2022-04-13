@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirPollutionMonitor.ShadowsPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <StackLayout HorizontalOptions="Center"
+                 VerticalOptions="Center">
+
+        <Image  Source="gallardo.png"
+                HeightRequest="150"
+                WidthRequest="150">
+            <Image.Shadow>
+                <Shadow Brush="#000000"
+                        Offset="10,50"
+                        Radius="40"
+                        Opacity="0.8"/>
+            </Image.Shadow>
+        </Image>
+
+        <Label Text="shadow example"
+               FontSize="Large">
+            <Label.Shadow>
+                <Shadow Brush="#000000"
+                        Offset="10,10"
+                        Radius="10"
+                        Opacity="1"/>
+            </Label.Shadow>
+        </Label>
+
+    </StackLayout>
+
+</ContentPage>
+
+    
