@@ -6,7 +6,9 @@
     <CollectionView ItemsSource="{Binding Stations}">
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Label Text="{Binding StationName}">
+                <Label Text="{Binding StationName}"
+                       TextColor="Black"
+                       Padding="10">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                     </Label.GestureRecognizers>

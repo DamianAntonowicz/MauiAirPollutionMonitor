@@ -3,9 +3,15 @@
              x:Class="AirPollutionMonitor.HandlersPage"
              BackgroundColor="{DynamicResource SecondaryColor}">
 
-    <StackLayout Margin="30">
+    <StackLayout Margin="30"
+                 VerticalOptions="Start"
+                 Orientation="Horizontal">
 
-        <CheckBox/>
+        <CheckBox />
+
+        <Label Text="I'm CheckBox"
+               VerticalOptions="Center"
+               Margin="10,0,0,0"/>
 
     </StackLayout>
 
