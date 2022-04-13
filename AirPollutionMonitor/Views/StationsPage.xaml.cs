@@ -2,7 +2,6 @@
 using AirPollutionMonitor.Models;
 using AirPollutionMonitor.ViewModels;
 using Microsoft.Maui.Controls;
-using Microsoft.Maui.Essentials;
 
 namespace AirPollutionMonitor
 {
