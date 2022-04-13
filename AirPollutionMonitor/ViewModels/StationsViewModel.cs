@@ -13,7 +13,7 @@ namespace AirPollutionMonitor.ViewModels
 {
     public class StationsViewModel : BaseViewModel
     {
-        private readonly IGiosApi _giosApi = RestService.For<IGiosApi>("https://api.gios.gov.pl");
+        private readonly IGiosApi _giosApi;
 
         private List<Station> _stations;
         public List<Station> Stations
@@ -24,8 +24,9 @@ namespace AirPollutionMonitor.ViewModels
 
         public Command LoadStationsCommand { get; }
 
-        public StationsViewModel()
+        public StationsViewModel(IGiosApi giosApi)
         {
+            _giosApi = giosApi;
             LoadStationsCommand = new Command(async () => await LoadStations());
         }
 

@@ -10,10 +10,10 @@ namespace AirPollutionMonitor
 	{
 		private readonly StationsViewModel _stationsViewModel;
 
-		public StationsPage()
+		public StationsPage(StationsViewModel viewModel)
 		{
 			InitializeComponent();
-			BindingContext = _stationsViewModel = new StationsViewModel();
+			BindingContext = _stationsViewModel = viewModel;
 		}
 		protected override void OnAppearing()
 		{
